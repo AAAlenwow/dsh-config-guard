@@ -1,0 +1,6 @@
+# dsh-config-guard — standalone host entry.
+# Also shipped inside the dsh-ai-armor bundle (loader id there: ai-armor).
+# Do NOT install both: the bundle already registers these tools.
+- insert:
+    - id: config-guard
+      name: dsh-config-guard

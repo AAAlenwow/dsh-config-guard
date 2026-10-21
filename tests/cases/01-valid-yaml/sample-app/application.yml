@@ -1,0 +1,11 @@
+server:
+  port: 8080
+  host: localhost
+dataSource:
+  url: jdbc:mysql://localhost/app
+  username: app
+logging:
+  level: INFO
+  appenders:
+    - console
+    - file

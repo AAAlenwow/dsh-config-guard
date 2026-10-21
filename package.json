@@ -1,0 +1,35 @@
+{
+  "name": "dsh-config-guard",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AAAlenwow/dsh-config-guard.git"
+  },
+  "description": "Config validator for DSH: YAML/ENV/properties checks for duplicate keys, tabs, required keys and near-miss key names. 1 tool, zero npm dependencies.",
+  "keywords": ["deepseek-harness","dsh","dsh-plugin","yaml","config","validator"],
+  "license": "MIT",
+  "type": "module",
+  "main": "./lib/host.js",
+  "exports": {
+    ".": "./lib/host.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "cordis.patch.yml",
+    "lib",
+    "tests",
+    "README.md",
+    "REPORT.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dsh": ">=0.1.7-alpha.1",
+      "profiles": [
+        "web"
+      ]
+    }
+  }
+}
